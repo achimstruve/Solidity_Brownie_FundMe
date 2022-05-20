@@ -31,6 +31,7 @@ def deploy_fund_me():
         ),  # the .get("verify") at the end is the same as ["verify"], but it reduces the danger of index errors
     )  # argument publish_source=True publishes the verified source code on etherscan
     print(f"Contract deployed to {fund_me.address}")
+    return fund_me
 
 
 def main():
